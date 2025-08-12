@@ -186,7 +186,7 @@ ssh -i "my-ec2-key.pem" ubuntu@3.15.45.67
 sudo apt update && sudo apt upgrade -y
 
 # Install essential packages
-sudo apt install -y curl wget git htop nginx
+sudo apt install -y curl wget git htop nginx  
 
 # Verify installation
 nginx -v
