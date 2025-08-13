@@ -183,10 +183,10 @@ ssh -i "my-ec2-key.pem" ubuntu@3.15.45.67
 #### 2.3 Initial Server Setup
 ```bash
 # Update package list
-sudo apt update && sudo apt upgrade -y
+sudo apt-get install curl
 
 # Install essential packages
-sudo apt install -y curl wget git htop nginx  
+sudo apt install -y  wget  htop nginx  
 
 # Verify installation
 nginx -v
@@ -201,8 +201,7 @@ nginx -v
 #### 1.1 Install Node.js via NodeSource
 ```bash
 # Add NodeSource repository
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-
+curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 # Install Node.js
 sudo apt-get install -y nodejs
 
